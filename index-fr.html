@@ -1,43 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Nicolas Martiné — Programmeur Autodidacte</title>
-        <link type="text/css" rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo">
-                <img src="/images/codecrop.jpg"></a>
-            </div>
-            <h3>
-                <ul>
-                    <li>Think/</li>
-                    <li>Work/</li>
-                    <li>Develop/</li>
-                </ul>
-                
-            </h3>
-            <div class="btn-group">
-                <button class="button">Acceuil</button>
-                <button class="button">A propos de moi</button>
-                <button class="button">Portfolio</button>
-                <button class="button">CV</button>
-            </div>
-        </div>
-        <div id="myphoto"><img src=""></div>
-        <div id="aboutme">
-            <h4 id="">
-                — Bonjour, mon prénom est Nicolas.
-            </h4>
-            <p>J'ai toujours été attiré par le monde de l'informatique depuis petit. On me dit que je passe trop de temps devant l'écran, mais c'est ce que j'adore et j'aimerais en faire ma carrière. <br>
-            <br>
-            J'ai étudier HTML, CSS, Javascript et un peu de C# en autodidaxie depuis fin 2018, j'adore construire de nouvelles applications pleine de differentes fonctions.<br>
-            <br>
-            J'ai 25 ans, j'habite en Moselle, France et si je ne suis pas derrière un écran vous pouvez me trouver sur les chemins forêstier en train de pratiquer la course a pied.</p>
-        </div>
-        <div id="box-ontop"></div>
+  <head>
+    <meta charset="utf-8" />
+    <title>Nicolas Martiné — Développeur Autodidacte</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" alt="my logo image" class="logo" />
 
-        <script src="index.js"></script>
-    </body>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Acceuil</a>
+          </li>
+          <li>
+            <a href="#home-about-me">A propos de moi</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="container">
+        <h1 class="title">
+          Hey! Moi c'est Nicolas.
+          <span>& je suis Développeur Autodidacte</span>
+        </h1>
+        <a href="#home-about-me" class="button button-accent button-about-me"
+          >En savoir plus sûr moi
+          <br />
+          <i class="fa fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-about-me" id="home-about-me">
+      <div class="container container-about-me">
+        <div class="home-about-text">
+          <!--
+            <img
+            src="images/kittytest-formyphoto.jpg"
+            alt="Nicolas Martiné"
+            class="img-me"
+            /> 
+          -->
+          <h1 class="title-about-me">Qui suis-je</h1>
+          <p>
+            J'ai toujours été attiré par le monde de l'informatique depuis
+            petit. On me dit que je passe trop de temps devant l'écran, mais
+            c'est ce que j'adore et j'aimerais en faire ma carrière.
+          </p>
+          <br />
+          <p>
+            J'ai étudier HTML, CSS, Javascript et un peu de C# en autodidaxie
+            depuis fin 2018, j'adore construire de nouvelles applications pleine
+            de fonctions différentes.
+          </p>
+          <br />
+          <p>
+            J'ai 25 ans, j'habite en Moselle, France et si je ne suis pas
+            derrière un écran vous pouvez me trouver sur les chemins forêstier
+            en train de pratiquer la course a pied.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-portfolio">
+      <section class="portfolio" id="portfolio">
+        <h1>Mon Portfolio</h1>
+
+        <!-- Portfolio item 01 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test01.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Titre de l'app</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >Détail de l'app</a
+            >
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 02 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test02.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Titre de l'app</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >Détail de l'app</a
+            >
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 03 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test03.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Titre de l'app</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >Détail de l'app</a
+            >
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 04 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test04.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Titre de l'app</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >Détail de l'app</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section class="github-link"></section>
+
+    <footer>
+      <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
+      <img src="images/logo.png" alt="my logo image" class="logo" />
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -1,76 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 150ms;
+}
 body {
-    color: black;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
-    background-image: url("images/background2mirror.jpg");
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+  font-family: "Merriweather Sans", sans-serif;
+  text-align: center;
+  overflow-x: hidden;
 }
-#header {
-    position: fixed;
-    /*border: 2px solid #262626;*/
-    box-sizing: border-box;
-    color: white;
-    background-color: #6666667a;
-    width: 100%;
-    height: 160px;
-    padding: 0px;
-    z-index: 1;
-}
-.button {
-    border: none;
-    border-top: 3px solid transparent;
-    background-color: transparent;
-    color: white;
-    margin-right: 10px;
-    font-size: 15px;
-    padding-top: 60px;
-    width: fit-content;
-    cursor: pointer;
 
+img {
+  max-width: 100%;
+  height: auto;
+  color: whitesmoke;
 }
-.btn-group {
-    position: relative;
-    top: 1%;
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+.container-about-me {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.container-portfolio {
+}
+
+.clearfix::after,
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* *TYPOG 
+
+*_______________________________________ */
+
+.home-about-me p {
+  line-height: 1.5em;
+}
+
+.home-about-me p:first-of-type {
+  margin-top: 1em;
+}
+
+.home-about-me p:last-of-type {
+  margin-bottom: 1em;
+}
+
+.title-about-me {
+  font-weight: 500;
+  padding: 0 0 0.7em 0;
+}
+
+.title {
+  font-size: 1.7em;
+}
+
+.title span {
+  font-weight: 400;
+  display: block;
+  font-size: 0.85em;
+  padding: 0em 0 0 0;
+}
+
+@media (min-width: 57rem) {
+  .title {
+    font-size: 2.4em;
+  }
+}
+
+/* *BUTTONS 
+
+*_______________________________________ */
+
+.home .button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin: 11em 0 0 0;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.portfolio .button {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em;
+  cursor: pointer;
+  border: 2px solid goldenrod;
+}
+
+.button-small {
+  font-size: 0.8em;
+}
+
+.home .button-accent {
+  color: whitesmoke;
+}
+
+.portfolio .button-accent {
+  color: whitesmoke;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+  color: rgb(199, 199, 199);
+  border-color: rgb(199, 199, 199);
+}
+
+.portfolio .button-accent:hover,
+.portfolio .button-accent:focus {
+  border-color: whitesmoke;
+  color: goldenrod;
+}
+
+@media (min-width: 20rem) {
+  .home .button {
+    margin: 6em 0 0 0;
+  }
+}
+
+/* *HEADER 
+
+*_______________________________________ */
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 4em 0 0 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 1.5em 0.2em 0.2em 0.2em;
+}
+
+nav a {
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 0.5em;
+  color: whitesmoke;
+  justify-content: center;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgb(199, 199, 199);
+}
+
+@media (min-width: 57rem) {
+  header {
+    margin: 3em;
+  }
+
+  header .logo {
+    float: left;
+  }
+
+  nav {
     float: right;
+  }
+
+  nav li {
+    margin: 0.5em 0.7em 0.7em 0.7em;
+  }
 }
-.button:hover {
-    border-top: 3px solid rgba(255, 68, 0, 0.774);
+
+/* *HOME 
+
+*_______________________________________ */
+
+.home {
+  background-image: url(images/astro.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 17em 0;
+  color: whitesmoke;
+  height: 100vh;
+  padding-top: 45vh;
 }
-h3 ul {
-    position: absolute;
-    left: 20%;
-    top: 16%;
-    list-style: none;
+
+/* *HOME ABOUT ME 
+
+*_______________________________________ */
+
+.home-about-text {
+  background-color: rgb(19, 19, 19);
+  padding: 3.4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid goldenrod;
+  outline-offset: -2em;
+  color: whitesmoke;
+  position: relative;
 }
-#logo {
-    position: absolute;
-    width: 135px;
-    height: 100px;
-    margin: 25px;
-    border: 5px solid #49494986;
+
+.home-about-text h1 {
+  color: goldenrod;
+  position: absolute;
+  background: rgb(19, 19, 19);
+  top: 0.6em;
+  padding: 0 0.35em;
+  left: 50%;
+  transform: translateX(-50%);
 }
-#myphoto {
-    position: absolute;
-    top: 350px;
-    left: 500px;
-    border: 2px solid black;
-    width: 300px;
-    height: 250px;
-    box-sizing: border-box;
+
+@media (min-width: 57rem) {
+  .home-about-me {
+    background-image: url(images/kittytest-formyphoto.jpg);
+    background-repeat: no-repeat;
+    background-position: right 20% bottom 50%;
+    padding: 3em;
+  }
+
+  .home-about-text {
+    width: 50%;
+    margin-left: -2.5%;
+    padding: 4em;
+    text-align: left;
+  }
+
+  .home-about-text h1 {
+    left: 3.35rem;
+    transform: translateX(0);
+  }
 }
-#aboutme {
-    position: absolute;
-    font-size: 17px;
-    top: 315px;
-    left: 450px;
-    right: 20px;
-    box-sizing: border-box;
-    width: auto;
-    background-color: #66666634;
-    padding: 20px;
-    padding-left: 400px;
+
+/* *PORTFOLIO
+
+*_______________________________________ */
+
+.portfolio {
+  margin: 2em 0 0;
+}
+
+.portfolio h1 {
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item img {
+  display: block;
+}
+
+.portfolio-desc p {
+  font-size: 0.7em;
+  margin-bottom: 0.8em;
+  color: whitesmoke;
+}
+
+.portfolio-desc {
+  position: absolute;
+  z-index: 1;
+  bottom: 0em;
+  left: 0em;
+  right: 0em;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1em;
+}
+
+@media (min-width: 37rem) {
+  .portfolio-item {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 57rem) {
+  .portfolio-item {
+    width: 33.333334%;
+    overflow: hidden;
+  }
+
+  .portfolio-desc {
+    transform: translateY(150%);
+  }
+
+  .portfolio-item:hover .portfolio-desc {
+    transform: translateY(0%);
+  }
+}
+
+/* *FOOTER
+
+*_______________________________________ */
+
+footer {
+  background: rgb(19, 19, 19);
+  color: whitesmoke;
+  padding: 1em;
+}
+
+footer p {
+  font-size: 0.7em;
+}
+footer .logo {
+  margin-top: 1em;
 }
