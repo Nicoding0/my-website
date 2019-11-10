@@ -23,11 +23,24 @@ img {
   max-width: 70rem;
 }
 
+.lang-container {
+  display: flex;
+  padding-top: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
 .clearfix::after,
 section::after {
   content: "";
   display: block;
   clear: both;
+}
+
+@media (min-width: 57rem) {
+  .lang-container {
+    padding-top: 0em;
+  }
 }
 
 @media (min-width: 60rem) {
@@ -104,6 +117,12 @@ section::after {
   }
 }
 
+@media (min-width: 100rem) {
+  .title {
+    font-size: 3.2em;
+  }
+}
+
 /* *BUTTONS 
 
 *_______________________________________ */
@@ -116,6 +135,19 @@ section::after {
   margin: 11em;
   padding: 0.5em;
   cursor: pointer;
+}
+
+#lang-fr {
+  padding: 0.5em;
+}
+
+#lang-uk {
+  padding: 0.5em;
+}
+
+#lang-fr:hover,
+#lang-uk:hover {
+  transform: scale(1.25);
 }
 
 .portfolio .button {
