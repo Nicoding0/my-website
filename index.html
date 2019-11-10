@@ -1,37 +1,149 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Nicolas Martiné — Self-Taught Software Developer</title>
-        <link type="text/css" rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div id="header">
-            <div id="logo">
-                <img src="/images/codecrop.jpg"></a>
-            </div>
-            <h3>
-                <ul>
-                    <li>Think/</li>
-                    <li>Work/</li>
-                    <li>Develop/</li>
-                </ul>
-            </h3>
-            <div class="btn-group">
-                <button class="button">Resume</button>
-                <button class="button">Portfolio</button>
-                <button class="button">About</button>
-                <button class="button">Home</button>
-            </div>
-        </div>
-        <div id="myphoto"></div>
-        <div id="aboutme">
-            <h4>
-                — Hello, my name is Nicolas.
-            </h4>
-            <p>I always have been highly drawn into the computer world since i was little</p>
-        </div>
+<!--!ADD LANGUAGE BUTTON IN HEADER!-->
+<!--!ADD MY PROJECTS!-->
 
-        <script src="index.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nicolas Martiné — Self-taught software developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="top">
+    <header>
+      <img src="images/logo.png" alt="my logo image" class="logo" />
+
+      <nav>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="#home-about-me">About me</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="container">
+        <h1 class="title">
+          Hi! My name Nicolas.
+          <span>& I am a Self-Taught Software Developer</span>
+        </h1>
+        <a href="#home-about-me" class="button button-accent button-about-me"
+          >Find out about me
+          <br />
+          <i class="fa fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+    <div class="container container-about-me">
+      <section class="home-about-me" id="home-about-me">
+        <div class="home-about-text">
+          <h1 class="title-about-me">Who Am I?</h1>
+          <p>
+            I always was drawn to the world of computers since i was a kid. I'm
+            told i spend too much time in front of the screen, but that's what i
+            really enjoy doing and i would love to make it my career.
+          </p>
+          <br />
+          <p>
+            I studied HTML, CSS, Javascript and C# by myself since the end of
+            2018, I love building new applications full of different
+            functionality.
+          </p>
+          <br />
+          <p>
+            I am 26 years old, I live in Moselle, France and if i'm not behind a
+            screen studying a programming language or building new apps, you can
+            find me on forest roads doing some running.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="container-portfolio">
+      <section class="portfolio" id="portfolio">
+        <h1>My Portfolio</h1>
+
+        <!-- Portfolio item 01 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test01.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Project Title</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >App details</a
+            >
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 02 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test02.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Project Title</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >App details</a
+            >
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 03 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test03.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Project Title</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >App details</a
+            >
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 04 -->
+
+        <figure class="portfolio-item">
+          <img src="images/portfolio-test04.jpg" alt="portfolio item" />
+          <figcaption class="portfolio-desc">
+            <p>Project Title</p>
+            <a
+              href="link/to/newpage/detail"
+              class="button button-accent button-small"
+              >App details</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+    </div>
+
+    <section class="github-link"></section>
+
+    <footer>
+      <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
+      <a href="#top"
+        ><img src="images/logo.png" alt="my logo image" class="logo"
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>

@@ -1,3 +1,6 @@
+<!--!ADD LANGUAGE BUTTON IN HEADER!-->
+<!--!ADD MY PROJECTS!-->
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -14,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>
+  <body id="top">
     <header>
       <img src="images/logo.png" alt="my logo image" class="logo" />
 
@@ -46,18 +49,10 @@
         </a>
       </div>
     </section>
-
-    <section class="home-about-me" id="home-about-me">
-      <div class="container container-about-me">
+    <div class="container container-about-me">
+      <section class="home-about-me" id="home-about-me">
         <div class="home-about-text">
-          <!--
-            <img
-            src="images/kittytest-formyphoto.jpg"
-            alt="Nicolas Martiné"
-            class="img-me"
-            /> 
-          -->
-          <h1 class="title-about-me">Qui suis-je</h1>
+          <h1 class="title-about-me">Qui suis-je?</h1>
           <p>
             J'ai toujours été attiré par le monde de l'informatique depuis
             petit. On me dit que je passe trop de temps devant l'écran, mais
@@ -76,9 +71,8 @@
             en train de pratiquer la course a pied.
           </p>
         </div>
-      </div>
-    </section>
-
+      </section>
+    </div>
     <div class="container-portfolio">
       <section class="portfolio" id="portfolio">
         <h1>Mon Portfolio</h1>
@@ -88,7 +82,7 @@
         <figure class="portfolio-item">
           <img src="images/portfolio-test01.jpg" alt="portfolio item" />
           <figcaption class="portfolio-desc">
-            <p>Titre de l'app</p>
+            <p>Titre du projet</p>
             <a
               href="link/to/newpage/detail"
               class="button button-accent button-small"
@@ -102,7 +96,7 @@
         <figure class="portfolio-item">
           <img src="images/portfolio-test02.jpg" alt="portfolio item" />
           <figcaption class="portfolio-desc">
-            <p>Titre de l'app</p>
+            <p>Titre du projet</p>
             <a
               href="link/to/newpage/detail"
               class="button button-accent button-small"
@@ -116,7 +110,7 @@
         <figure class="portfolio-item">
           <img src="images/portfolio-test03.jpg" alt="portfolio item" />
           <figcaption class="portfolio-desc">
-            <p>Titre de l'app</p>
+            <p>Titre du projet</p>
             <a
               href="link/to/newpage/detail"
               class="button button-accent button-small"
@@ -130,7 +124,7 @@
         <figure class="portfolio-item">
           <img src="images/portfolio-test04.jpg" alt="portfolio item" />
           <figcaption class="portfolio-desc">
-            <p>Titre de l'app</p>
+            <p>Titre du projet</p>
             <a
               href="link/to/newpage/detail"
               class="button button-accent button-small"
@@ -145,7 +139,9 @@
 
     <footer>
       <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
-      <img src="images/logo.png" alt="my logo image" class="logo" />
+      <a href="#top"
+        ><img src="images/logo.png" alt="my logo image" class="logo"
+      /></a>
     </footer>
 
     <script src="index.js"></script>
