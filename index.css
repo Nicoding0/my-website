@@ -250,6 +250,16 @@ nav a:focus {
   }
 }
 
+@media (min-width: 100rem) {
+  nav li {
+    margin: 0.5em 2.5em 0.7em 2.5em;
+  }
+
+  header .logo {
+    margin-left: 4.5em;
+  }
+}
+
 /* *HOME 
 
 *_______________________________________ */
@@ -298,6 +308,7 @@ nav a:focus {
     margin-left: -2.5%;
     padding: 4em;
     text-align: left;
+    box-shadow: 0 0 5.5em 0 rgb(17, 17, 17);
   }
 
   .home-about-text h1 {
@@ -402,6 +413,10 @@ nav a:focus {
   .portfolio-item {
     width: 33.333334%;
     overflow: hidden;
+  }
+
+  .portfolio-item img {
+    border: 3px solid transparent;
   }
 
   .portfolio-desc {
