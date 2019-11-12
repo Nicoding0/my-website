@@ -9,6 +9,11 @@ body {
   text-align: center;
   background: #b9c2bf71;
   overflow-x: hidden;
+  overflow: overlay;
+}
+
+body::-webkit-scrollbar * {
+  background: transparent;
 }
 
 img {
@@ -35,6 +40,12 @@ section::after {
   content: "";
   display: block;
   clear: both;
+}
+
+@media (max-width: 57rem) {
+  .container-about-me {
+    margin-right: 2.1em;
+  }
 }
 
 @media (min-width: 57rem) {
@@ -285,7 +296,7 @@ nav a:focus {
   background-color: rgb(19, 19, 19);
   padding: 4.5em;
   width: 100vw;
-  margin-left: -2.5%;
+  margin-left: -2%;
   outline: 2px solid goldenrod;
   outline-offset: -2em;
   color: whitesmoke;
@@ -308,7 +319,7 @@ nav a:focus {
     margin-left: -2.5%;
     padding: 4em;
     text-align: left;
-    box-shadow: 0 0 5.5em 0 rgb(17, 17, 17);
+    box-shadow: 0 0 4em 0 rgba(17, 17, 17, 0.705);
   }
 
   .home-about-text h1 {
