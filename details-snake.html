@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Details</title>
+    <link rel="stylesheet" href="details.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="preload">
+      <div class="spinner">
+        <div class="load-text"></div>
+      </div>
+    </div>
+    <section class="header">
+      <div class="home">
+        <header>
+          <img src="images/logo.png" alt="my logo image" class="logo" />
+
+          <nav>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="#home-about-me">About me</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+            <div class="lang-container">
+              <a id="lang-fr" href="./to/details/lang">
+                <img src="images/france-24.png" alt="Français" />
+              </a>
+
+              <a id="lang-uk" href="./to/details/lang">
+                <img src="images/united-kingdom-24.png" alt="English" />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <h1>Snake</h1>
+      </div>
+    </section>
+    <div class="container container-about-app">
+      <section class="img-about">
+        <div class="about-img">
+          <img src="./images/details-pf-01.PNG" alt="Snake Preview" />
+        </div>
+      </section>
+      <section class="about-app" id="about-app">
+        <div class="about-text">
+          <h1 class="title-about-app">What is it?</h1>
+          <p>
+            This is a classic snake game I made using HTML, CSS and Javascript,
+            it uses the HTML5 Canvas to draw the game on.
+          </p>
+          <br />
+          <p>
+            I used an object oriented approach to keep every functions separate
+            from the main Javascript file, like drawing the snake, updating it
+            and drawing the food on the canvas.
+          </p>
+          <br />
+          <p>
+            I used the flexbox a lot when styling the game, i found it really
+            easy to position the different elements where i wanted them using it
+            and it has the advantage to be responsive but my game is not really
+            suited for mobile.
+          </p>
+          <br />
+          <p>
+            Link to this GitHub repo:
+            <a href="https://github.com/Nicoding0/snake-game" target="_blank"
+              >https://github.com/snake-game</a
+            >
+            <br />
+            Link to my webpage:
+            <a href="https://nicoding0.github.io/snake-game/" target="_blank"
+              >https://nicoding0.github.io</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
+      <a href="#top"
+        ><img src="images/logo.png" alt="my logo image" class="logo"
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

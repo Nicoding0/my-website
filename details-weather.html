@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Details</title>
+    <link rel="stylesheet" href="details.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="preload">
+      <div class="spinner">
+        <div class="load-text"></div>
+      </div>
+    </div>
+    <section class="header">
+      <div class="home">
+        <header>
+          <img src="images/logo.png" alt="my logo image" class="logo" />
+
+          <nav>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="#home-about-me">About me</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+            <div class="lang-container">
+              <a id="lang-fr" href="./to/details/lang">
+                <img src="images/france-24.png" alt="Français" />
+              </a>
+
+              <a id="lang-uk" href="./to/details/lang">
+                <img src="images/united-kingdom-24.png" alt="English" />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <h1>Weather and Clocks App</h1>
+      </div>
+    </section>
+    <div class="container container-about-app">
+      <section class="img-about">
+        <div class="about-img">
+          <img src="./images/details-pf-00.PNG" alt="detail image" />
+        </div>
+      </section>
+      <section class="about-app" id="about-app">
+        <div class="about-text">
+          <h1 class="title-about-app">What is it?</h1>
+          <p>
+            It is a simple local weather and world clocks app i made with HTML,
+            CSS and Javascript that utilizes APIs and Geolocalization to get the
+            exact time at different timezones and get your local weather.
+          </p>
+          <br />
+          <p>
+            I used the fetch API and promises to get my data from the two online
+            APIs that i used to get the data about the local weather using the
+            browser's Geolocation to get your latitude and longitude that was
+            needed for the API query
+          </p>
+          <br />
+          <p>
+            Once again I used the flexbox and Google Fonts when styling this app
+            and it's amazing how the flexbox makes it quick and easy to position
+            everything where i wanted it to be.
+          </p>
+          <br />
+          <p>
+            Link to this GitHub repo:
+            <a
+              href="https://github.com/Nicoding0/clocks-weather"
+              target="_blank"
+              >https://github.com/clocks-weather</a
+            >
+            <br />
+            Link to my webpage:
+            <a
+              href="https://nicoding0.github.io/clocks-weather/"
+              target="_blank"
+              >https://nicoding0.github.io</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
+      <a href="#top"
+        ><img src="images/logo.png" alt="my logo image" class="logo"
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

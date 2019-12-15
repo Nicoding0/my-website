@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Détail de l'app</title>
+    <link rel="stylesheet" href="details.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="preload">
+      <div class="spinner">
+        <div class="load-text"></div>
+      </div>
+    </div>
+    <section class="header">
+      <div class="home">
+        <header>
+          <img src="images/logo.png" alt="my logo image" class="logo" />
+
+          <nav>
+            <ul>
+              <li>
+                <a href="#top">Acceuil</a>
+              </li>
+              <li>
+                <a href="#home-about-me">A propos de moi</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+            <div class="lang-container">
+              <a id="lang-fr" href="./index-fr.html">
+                <img src="images/france-24.png" alt="France" />
+              </a>
+
+              <a id="lang-uk" href="./index.html">
+                <img src="images/united-kingdom-24.png" alt="English" />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <h1>Recherche de recettes</h1>
+      </div>
+    </section>
+    <div class="container container-about-app">
+      <section class="img-about">
+        <div class="about-img">
+          <img src="./images/details-pf-04.PNG" alt="detail image" />
+        </div>
+      </section>
+      <section class="about-app" id="about-app">
+        <div class="about-text">
+          <h1 class="title-about-app">C'est quoi?</h1>
+          <p>
+            J'ai creer cette application avec ReactJS pour solidifier ce que
+            j'apprenais, j'ai utiliser un API de recherche de recettes qui
+            retourne des recettes contenant l'ingrédient que tu écris et soumets
+            depuis la barre de recherche.
+          </p>
+          <br />
+          <p>
+            J'ai utiliser les "hooks" (useState, useEffect...) qui ont été
+            introduit avec la version 16.8 de ReactJS qui remplacent les classes
+            ainsi que le React Router pour remplacer les lien "a" qui viennent
+            de HTML.
+          </p>
+          <br />
+          <p>
+            Ici j'ai utiliser le style en ligne et les modules CSS pour styler
+            mes composant React et je doit bien avouer que c'est bien plus
+            intuitif et rapide de styler comme ceci car avec le style en ligne
+            tout est dans le même fichier/composant.
+          </p>
+          <br />
+          <p>
+            Lien vers ce Dépôt GitHub:
+            <a
+              href="https://github.com/Nicoding0/react-recipe-finder"
+              target="_blank"
+              >https://github.com/react-recipe-finder</a
+            >
+            <br />
+            Lien vers la page web:
+            <a
+              href="https://nicoding0.github.io/react-recipe-finder/"
+              target="_blank"
+              >https://nicoding0.github.io</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
+      <a href="#top"
+        ><img src="images/logo.png" alt="my logo image" class="logo"
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Details</title>
+    <link rel="stylesheet" href="details.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="preload">
+      <div class="spinner">
+        <div class="load-text"></div>
+      </div>
+    </div>
+    <section class="header">
+      <div class="home">
+        <header>
+          <img src="images/logo.png" alt="my logo image" class="logo" />
+
+          <nav>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="#home-about-me">About me</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+            </ul>
+            <div class="lang-container">
+              <a id="lang-fr" href="./to/details/lang">
+                <img src="images/france-24.png" alt="Français" />
+              </a>
+
+              <a id="lang-uk" href="./to/details/lang">
+                <img src="images/united-kingdom-24.png" alt="English" />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <h1>Minuteur cumulatif</h1>
+      </div>
+    </section>
+    <div class="container container-about-app">
+      <section class="img-about">
+        <div class="about-img">
+          <img src="./images/details-pf-03.PNG" alt="detail image" />
+        </div>
+      </section>
+      <section class="about-app" id="about-app">
+        <div class="about-text">
+          <h1 class="title-about-app">C'est quoi?</h1>
+          <p>
+            Je voulais surveiller combien de temps je passe a programmer, alors
+            j'ai creer ce simple minuteur avec JavaScript, HTML et CSS.
+          </p>
+          <br />
+          <p>
+            Il n'y a pas grand chose qui ce passe, il compte depuis les secondes
+            au minutes, heures et jours mais je ne voulais pas qu'il ce
+            réinitialise a chaque fois que je ferme la page alors j'ai utiliser
+            la mémoire locale pour stocker le temps passer. Il peut évidemment
+            être utiliser a d'autres fins.
+          </p>
+          <br />
+          <p>
+            Il n'y a pas grand chose a dire sur le CSS, c'est plutot standard,
+            j'ai utiliser la "flexbox" pour centrer mes éléments avec
+            <em>justify-content</em> et <em>align-items</em>. A part ca pas
+            grand chos d'autre.
+          </p>
+          <br />
+          <p>
+            Lien vers ce Dépôt GitHub:
+            <a
+              href="https://github.com/Nicoding0/cumulative-timer"
+              target="_blank"
+              >https://github.com/cumulative-timer</a
+            >
+            <br />
+            Lien vers la page web:
+            <a
+              href="https://nicoding0.github.io/cumulative-timer/"
+              target="_blank"
+              >https://nicoding0.github.io</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright&copy; 2019 Nicolas Martiné &mdash; All Rights Reserved</p>
+      <a href="#top"
+        ><img src="images/logo.png" alt="my logo image" class="logo"
+      /></a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
