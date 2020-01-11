@@ -246,6 +246,11 @@ section::after {
 }
 
 .home .button-accent {
+  color: rgb(255, 194, 40);
+}
+
+.home .button-accent:hover,
+.home .button-accent:focus {
   color: whitesmoke;
 }
 
@@ -274,6 +279,30 @@ section::after {
 @media (min-width: 57rem) {
   .home .button-accent {
     margin: 20em 0 0 0;
+  }
+}
+
+@media (min-height: 20rem) {
+  .home .button {
+    margin: 1em 0 0 0;
+  }
+}
+
+@media (min-height: 25rem) {
+  .home .button {
+    margin: 1.5em 0 0 0;
+  }
+}
+
+@media (min-height: 30rem) {
+  .home .button {
+    margin: 2em 0 0 0;
+  }
+}
+
+@media (min-height: 34rem) {
+  .home .button {
+    margin: 3em 0 0 0;
   }
 }
 
