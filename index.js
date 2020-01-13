@@ -6,6 +6,5 @@ window.addEventListener("load", () => {
   preload.classList.remove("preload");
   preload.classList.add("preload-finish");
   body.style.overflow = "";
+  console.log("Loaded");
 });
-
-console.log("Loaded");
