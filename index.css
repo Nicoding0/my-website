@@ -189,6 +189,25 @@ section::after {
   text-decoration: underline;
 }
 
+.contact {
+  font-weight: 700;
+  font-size: 1.2em;
+  /* rgb(19, 19, 19) */
+}
+
+.contact a {
+  color: rgba(245, 245, 245, 0.836);
+  padding: 0.3em;
+  border: 0.1em solid rgb(19, 19, 19);
+  text-decoration: none;
+  background: rgba(19, 19, 19, 0.034);
+}
+
+.contact a:hover {
+  border-color: rgba(218, 165, 32, 0.521);
+  color: rgb(245, 245, 245);
+}
+
 @media (min-width: 57rem) {
   .title {
     font-size: 2.4em;
@@ -278,33 +297,33 @@ section::after {
 
 @media (min-width: 57rem) {
   .home .button-accent {
-    margin: 20em 0 0 0;
+    margin: 10em 0 0 0;
   }
 }
-
+/*
 @media (min-height: 20rem) {
-  .home .button {
-    margin: 1em 0 0 0;
+  .home .button-accent {
+    margin: 10em 0 0 0;
   }
 }
 
-@media (min-height: 25rem) {
+@media (max-height: 25rem) {
   .home .button {
     margin: 1.5em 0 0 0;
   }
 }
 
-@media (min-height: 30rem) {
+@media (max-height: 30rem) {
   .home .button {
     margin: 2em 0 0 0;
   }
 }
 
-@media (min-height: 34rem) {
+@media (max-height: 34rem) {
   .home .button {
     margin: 3em 0 0 0;
   }
-}
+} */
 
 /* *HEADER 
 
@@ -548,6 +567,23 @@ nav a:focus {
   }
 }
 
+/* *CONTACT
+
+*_______________________________________ */
+
+.contact {
+  background: rgba(19, 19, 19);
+  /* border-top: 10px solid rgb(19, 19, 19); */
+  height: 265px;
+}
+
+.contact-content {
+  width: auto;
+  padding: 2.8em 0;
+  outline: 0.13em groove goldenrod;
+  outline-offset: -1.2em;
+}
+
 /* *FOOTER
 
 *_______________________________________ */
@@ -555,13 +591,17 @@ nav a:focus {
 footer {
   background: rgb(19, 19, 19);
   color: whitesmoke;
-  padding: 1em;
+  padding: 1.5em;
 }
 
 footer p {
   font-size: 0.7em;
 }
 footer .logo {
-  margin-top: 1em;
+  margin-top: 2.2em;
   cursor: pointer;
+}
+
+footer .logo:hover {
+  transform: scale(1.12);
 }
